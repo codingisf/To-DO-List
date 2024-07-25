@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Add Task</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-green-400 h-[60px] w-full flex justify-between px-[60px]">
+        <div class="right my-auto flex justify-around w-[30%]">
+          <p class="font-bold md:text-lg text:md">2-DO</p>
+          <a class="hover:font-bold hover:cursor-pointer transition-all hidden md:block" href="./index.html">Back to Task</a>
+        </div>
+        <div class="left my-auto">
+          <p class="md:text-3xl text-lg text-black">👤</p>
+        </div>
+    </nav>
+    <main class="h-[92dvh] bg-green-50">
+        <a class="hover:font-bold hover:cursor-pointer " href="./index.html">Back to Task</a>
+        <div class=" pt-[5rem]  text-center">
+        <h2 class="mb-5 font-bold md:text-xl text-lg ">Add Task Details</h2>
+        <form id="taskform" class="border px-2 py-[50px] w-[70%] mx-auto border-green-400 rounded-xl">
+            <div class="pb-5 flex-1">
+                <label for="taskname">Task Name</label>
+                <input id="taskname" class="border rounded-lg border-green-400 px-5 py-2 md:w-[270px] w-[200px]  ml-4 focus:border-green-700 focus:outline outline-green-600" type="text" placeholder="Ex : To Complete HomeWork" required>
+            </div>
+            <div class="pb-5 flex-1">
+                <label for="description">Description</label>
+                <input id="description" class="border rounded-lg border-green-400 px-5 py-2 md:w-[270px] w-[200px] ml-4 focus:border-green-700 focus:outline outline-green-600" type="text" placeholder="optional">
+            </div>
+            <div class="pb-5 flex-1">
+                <label for="note">Note</label>
+                <input id="note" class="border rounded-lg border-green-400 px-5 py-2 md:w-[270px] w-[200px] md:ml-16 ml-4 focus:border-green-700 focus:outline outline-green-600" type="text" placeholder="optional">
+            </div>
+            <div class="pb-5 flex-1">
+                <label for="date">Date</label>
+                <input id="date" class="border rounded-lg border-green-400 px-5 py-2 md:w-[270px] w-[200px] md:ml-16 ml-4 focus:border-green-700 focus:outline outline-green-600" type="date" placeholder="" required>
+            </div>
+            <div class="pb-5 flex-1">
+                <label for="time">Time</label>
+                <input id="time" class="border rounded-lg border-green-400 px-5 py-2 md:w-[270px] w-[200px] md:ml-16 ml-4 focus:border-green-700 focus:outline outline-green-600" type="time" placeholder="" required>
+            </div>
+            <button type="submit" id="taskSubmit" class="mt-5 border px-16 py-2 rounded-md border-green-600 focus:bg-green-600 focus:border-green-50 hover:cursor-pointer">
+                Add
+            </button>
+        </form></div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
